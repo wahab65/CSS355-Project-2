@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+header {
+  background: #007B86;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.catName {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #007B86;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 55px;
+	margin-left: 55px;
+	margin-bottom: 55px;
+}
+
+.banner {
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	margin:25px 25px;
+	width:96%;
+	justify-content: center; /* center horizontally */
+  transition: transform .2s; /* Animation */
+}
+
+
+
+.flexed-item {
+  float: left;
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin:40px 195px;*/
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: ;
+	width:33.33%;
+  justify-content: center;
+  align-items: center;
+	/*justify-content: center; /* center horizontally */
+  /*transition: transform .2s; /* Animation */
+}
+
+.flexed-item img{
+  float: left;
+  width: 100%;
+  /*height: 136px;*/
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+</style>
+</head>
+  <body id="placesPage">
+
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left">Pick Your Place</p>
+
+      <nav>
+
+        <ul>
+        <!--<h1 class="title">Pick Your Place</h1>-->
+
+          <li><a href="home.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </header>
+
+  <br><br> <center> <h2> Categories </h2> <hr> </center> <br><br>
+
+  <div class="flex-container">
+      <div class="flexed-item"> <a href="parks.html"> <img src="images/5.png"> </a> <br> <p class = "catName"> <br> <br> Park <br><br> </p> </div>
+      <div class="flexed-item"> <a href="cafe.html"> <img src="images/6.png"> </a> <br> <p class = "catName"> <br> <br> Cafe <br> <br> </p> </div>
+      <div class="flexed-item"> <a href="library.html"> <img src="images/10.png"> </a> <br> <p class = "catName"> <br> <br> Library <br> <br> </p> </div>
+  </div>
+
+
+
+  <div class="flex-container">
+      <div class="flexed-item"> <a href="restaurant.html"> <img src="images/7.png"> </a> <br> <p class = "catName"> <br> <br> Restaurant <br> <br> </p> </div>
+      <div class="flexed-item"> <a href="museum.html"> <img src="images/8.png"> </a> <br> <p class = "catName"> <br> <br> Museum <br> <br> </p> </div>
+      <div class="flexed-item"> <a href="tourist.html"> <img src="images/9.png"> </a> <br> <p class = "catName"> <br> <br> Tourist Attractions <br> <br> </p> </div>
+  </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>

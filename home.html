@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+
+}
+
+.container {
+  position: fixed;
+	width: 100%;
+	margin: 0 auto;
+  left:0;
+  background-color: #007B86;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+header {
+  background: #007B86;
+  width:100%;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+  padding-right: 30px;
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.flex-container-banner {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.banner {
+	padding: 0px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin-left:25px;
+	margin-right: 25px;*/
+	justify-content: center; /* center horizontally */
+  transition: transform .2s; /* Animation */
+}
+
+.flexed-item {
+  float: left;
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin:40px 195px;*/
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 55px;
+	width:33.33%x;
+	/*justify-content: center; /* center horizontally */
+  /*transition: transform .2s; /* Animation */
+}
+
+.flexed-item img{
+  float: left;
+  width: 325px;%;
+  height: 325px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+
+/*For the todo bucketlist
+*/
+.bucketlist{
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+}
+
+form{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+
+}
+.input{
+  border:none;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width:100%
+}
+.input::placeholder{
+  color: #d5d5d5;
+}
+.input:focus{
+  outline-color: rgba(179, 131, 226)
+}
+.todos{
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.todos li{
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+
+}
+.todos li.completed{
+  color: #b6b6b6;
+  text-decoration: line-through;
+
+}
+small{
+  color: #b5b5b5;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width:1400px;
+  text-align: center;
+  margin: 0 auto; /* add this line */
+
+}
+.image-container img{
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+
+}
+
+
+
+</style>
+</head>
+  <body id="homePage">
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left"> Pick Your Place</p>
+
+      <nav>
+        <ul>
+        <!--<h1 class="title">Pick Your Place</h1>-->
+          <li><a data-active="homePage" href="home.html">Home</a></li>
+          <li><a data-active="placesPage" href="places.html">Places</a></li>
+          <li><a data-active="feedbackPage" href="feedback.html">Feedback</a></li>
+          <li><a data-active="aboutPage" href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </header>
+
+  <br><br><br><br>
+
+  <div class="flex-container-banner">
+    <div class="banner"> <img src="images/banner2.jpeg"> </div>
+  </div>
+
+  <br><br> <center> <h2> Popular Places This Week </h2> </center> <hr> <br><br><br>
+
+  <div class="flex-container">
+      <div class="flexed-item"> <a href="tourist.html"> <img src="images/bridge.jpeg"> </a> <br> <center> Brookly Bridge</center></div>
+      <div class="flexed-item"> <a href="restaurant.html"> <img src="images/le.jpeg"> </a> <br> <center> Le Botaniste </center></div>
+      <div class="flexed-item"> <a href="parks.html"> <img src="images/bryant.jpeg"> </a> <br> <center> Bryant Park </center> </div>
+  </div>
+
+<br>
+<div class="bucketlist">
+  <h2>Make A List Of The Places You Would Love To Visit</h2>
+    <form id="form" action="index.html" method="post">
+      <input type="text" class="input" id="input" placeholder="Your Favourite Desitnations" autocomplete="off">
+      <ul class="todos" id="todos">
+
+      </ul>
+    </form>
+    <small>Left click to toggle completed <br>
+          click to delete bucketlist</small>
+</div>
+<center> <h2> Image Galleries </h2> </center> <hr>
+
+<div class="image-container">
+
+</div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript" src="homeScript.js"></script>
+  </body>
+</html>

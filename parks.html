@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+.catName {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #007B86;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+}
+
+hr {
+  width: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+h1 {
+  color: #FFEB98;
+  color: #124C50;
+  color: #FFEB98;
+  color: #124C50;
+
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  color: white;
+}
+
+header {
+  background: #007B86;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 800;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 55px;
+	margin-left: 55px;
+	margin-bottom: 55px;
+	padding: 10px;
+	background-color: rgb(255, 235, 152, 0.3);
+	background-color: rgb(14, 141, 153, 0.6);
+	background-color: rgb(118, 204, 207, 0.4);
+
+	border-radius: 15px;
+}
+
+.flexed-item {
+  float: left;
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin:40px 195px;*/
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: ;
+	width:33.33%;
+  justify-content: center;
+  align-items: center;
+	/*justify-content: center; /* center horizontally */
+  /*transition: transform .2s; /* Animation */
+}
+
+.flexed-item img{
+  float: left;
+  width: 100%;
+  height: 350px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.banner {
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	margin:25px 25px;
+	width:96%;
+	justify-content: center; /* center horizontally */
+  transition: transform .2s; /* Animation */
+}
+
+.flexed-item li {
+  margin-left: -20px;
+}
+
+
+.rating {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	/*margin-right: 5px;
+	margin-left: 5px;*/
+	margin-bottom: 5px;
+}
+
+.rating-item {
+  float: left;
+	padding: 5px;
+	color: black;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	margin-top: -25px;
+	/*margin-right: 1px;
+	margin-left: 1px;*/
+}
+
+.rating-item img{
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #FFEB98;
+  background-color: rgb(14, 141, 153, 1);
+  color: black;
+  border: 2px solid #FFEB98;
+
+  margin-bottom: -2px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(14, 141, 153, 0.5);
+  background-color: #FFEB98;
+  color: black;
+  border-radius: 10px;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 10px;
+  left: -50px;
+  margin: auto;
+  position: absolute;
+  top: 600px;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 120px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+
+* {box-sizing:border-box}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 70px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 920px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+</style>
+</head>
+  <body>
+
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left">Pick Your Place</p>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br><br> <center> <h2> Parks </h2> </center> <hr> <br><br>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href="musicAlbumCover.html"> <img src="images/bryant.jpeg"> </a>
+    <!-- <div class="slide_buttons"></div>-->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+   <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+  </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Bryant Park </h3>
+      <ul>
+        <li> site of ice skating at Winter Village </li>
+        <li> free summer movies on the lawn </li>
+        <li> endless meals and meetings at its tables </li>
+        <li> an ideal resting spot for the thousands of tourists and residents </li>
+        <li> outdoor Reading Room has picture books and summertime story times </li>
+        <li> purchase food and drink at the park OR bring your own </li>
+        <li> enjoy the skaters and festive views </li>
+        <li> no reservations needed </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/New+york,+NY+10018.+Bryant+park/@40.7103916,-73.9878533,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c259aae7a0b1bd:0xb49cafb82537f1a7!2m2!1d-73.9832326!2d40.7535965" target="_blank">Bryant Park, New York, NY 10018</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 25 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 9 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 2 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <!-- The dots/circles -->
+  <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href="musicAlbumCover.html"> <img src="images/hudson.jpeg"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Hudson River Park Trust </h3>
+      <ul>
+        <li> waterfront park on the North River </li>
+        <li> numerous different piers/places to explore for different activies </li>
+        <li> panoramic views of Lower Manhattan and the New York Harbor from Pier 25 </li>
+        <li> meandering boardwalk through native plants, a street-style skatepark, dog run, basketball and tennis courts along lively stretch of waterfront at Tribeca Upland </li>
+        <li> catch some rays while lounging on a large, green lawn, at Pier 45 </li>
+        <li> Pier 51 playground offers imaginative play with a nautical theme for children </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/353+West+st,+New+York,+NY+10011+Hudson+river+park+trust/@40.7684818,-74.001751,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c259976ff0a2e5:0x64de219a28f24ce0!2m2!1d-74.011028!2d40.7330699" target="_blank">Hudson River Park Trust, 353 West St, New York, NY 10011</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 18 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 6 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 2 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href="musicAlbumCover.html"> <img src="images/adam.jpeg"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Adam Yauch Park </h3>
+      <ul>
+        <li> offers several basketball courts </li>
+        <li> huge playground for children to play </li>
+        <li> swings and climb on fixtures to keep children entertained</li>
+        <li> enjoy long walks on the waterfront and see the spraying water fountain </li>
+        <li> plenty of shade for the hot Summer months </li>
+        <li> open and friendly for dogs </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/Adam+Yauch+Park./@40.7208294,-73.9957334,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25a4438b641af:0xc6d96fed3e34d04!2m2!1d-73.998883!2d40.6920679" target="_blank">Adam Yauch Park, 27 State St #5512, Brooklyn, NY 11201</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 15 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 8 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 3 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  </body>
+</html>

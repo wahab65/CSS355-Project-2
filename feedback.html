@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-NvJ5f5rc5N5wp+VphzSCeKj8VfEe+YH7VpyRk6vqw8JyoBq6uq7wUfwNR6G0S6JW1qLXQ2fmpICsTvCZsTTsTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+	/*align-items: center;*/
+}
+
+.form {
+  background: #007B86;
+  background-color: rgb(14, 141, 153, 0.6);
+
+  display:flex;
+  padding: 2vw 2vw;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  /*text-align: left;*/
+  width: 40%;
+	margin: 0 auto;
+}
+
+#placeName {
+  width: 381px;
+}
+
+#message {
+  width: 99%;
+
+}
+
+#submit {
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background-color: #FFEB98;
+}
+
+#instructions {
+  text-align: center;
+  width: 40%
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+header {
+  background: #007B86;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+hr {
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+.radio-image{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.radio-image input[type="radio"] {
+    display: none;
+}
+
+.radio-image label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio-image label img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+.radio-image input[type="radio"]:checked + label img {
+    border-color: #000;
+}
+/* .icons{
+  height:30px;
+  width:35px;
+} */
+</style>
+</head>
+  <body id="feedbackPage">
+
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left">Pick Your Place</p>
+
+      <nav>
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br><br> <center> <h2> Feedback Form </h2>  <hr> <br>
+
+  <p id="instructions"> Your feedback is valuable to us. Please take a few minutes to fill out this feedback form so we can better suggest places for you and others. <br>Thank you! </p> </center>
+  <br><br>
+
+  <div class="form">
+  <form name = "form-to-sheets">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" placeholder="e.g. John" required>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" placeholder="e.g. Doe" required>
+    <br><br>
+
+    <label for="pname">Place name:</label>
+    <input type="text" id="placeName" name="placeName" placeholder="e.g. Central Park">
+    <br><br>
+
+    <label for="fname">How was your experience?</label>
+
+    <div class="radio-image">
+        <input type="radio" id="good" class="satisfied" name="satisfied" value="Good">
+        <label for="good"><img src="images/star.png" alt="Good"></label>
+
+        <input type="radio" id="average" class="satisfied" name="satisfied" value="Average">
+        <label for="average"><img src="images/neutral.png" alt="Good"></label>
+
+        <input type="radio" id="bad" class="satisfied" name="satisfied" value="Bad">
+        <label for="bad"><img  src="images/sad-face.png" alt="Good"></label>
+    </div>
+
+
+    <br><br>
+
+
+    <label for="fname">Please explain what you liked (and/or disliked) about this place</label>
+    <br>
+    <!--
+    <input type="text" id="explain" name="explain" placeholder="e.g. this place has a really nice view...">
+    <br><br>
+    -->
+    <textarea name = "message" id="message" rows="4" placeholder="e.g. this place has a really nice view..." required> </textarea>
+
+    <br>
+    <br>
+    <center> <input type="submit" id = "submit" value="Submit"> </center>
+    <span id="success"></span>
+  </form>
+  </div>
+
+
+  <script type="text/javascript" src="feedBackScript.js"></script>
+
+  </body>
+
+
+</html>

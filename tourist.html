@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+.catName {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #007B86;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+}
+
+hr {
+  width: 105px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+h1 {
+  color: #FFEB98;
+  color: #124C50;
+  color: #FFEB98;
+  color: #124C50;
+
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  color: white;
+}
+
+header {
+  background: #007B86;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 800;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 55px;
+	margin-left: 55px;
+	margin-bottom: 55px;
+	padding: 10px;
+	background-color: rgb(255, 235, 152, 0.3);
+	background-color: rgb(14, 141, 153, 0.6);
+	background-color: rgb(118, 204, 207, 0.4);
+
+	border-radius: 15px;
+}
+
+.flexed-item {
+  float: left;
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin:40px 195px;*/
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: ;
+	width:33.33%;
+  justify-content: center;
+  align-items: center;
+	/*justify-content: center; /* center horizontally */
+  /*transition: transform .2s; /* Animation */
+}
+
+.flexed-item img{
+  float: left;
+  width: 100%;
+  height: 350px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.banner {
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	margin:25px 25px;
+	width:96%;
+	justify-content: center; /* center horizontally */
+  transition: transform .2s; /* Animation */
+}
+
+.flexed-item li {
+  margin-left: -20px;
+}
+
+
+.rating {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	/*margin-right: 5px;
+	margin-left: 5px;*/
+	margin-bottom: 5px;
+}
+
+.rating-item {
+  float: left;
+	padding: 5px;
+	color: black;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	margin-top: -25px;
+	/*margin-right: 1px;
+	margin-left: 1px;*/
+}
+
+.rating-item img{
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #FFEB98;
+  background-color: rgb(14, 141, 153, 1);
+  color: black;
+  border: 2px solid #FFEB98;
+
+  margin-bottom: -2px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(14, 141, 153, 0.5);
+  background-color: #FFEB98;
+  color: black;
+  border-radius: 10px;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 10px;
+  left: -50px;
+  margin: auto;
+  position: absolute;
+  top: 600px;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 120px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+
+* {box-sizing:border-box}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 70px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 920px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+</style>
+</head>
+  <body>
+
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left">Pick Your Place</p>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br><br> <center> <h2> Tourist Attractions </h2> </center> <hr> <br><br>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href=""> <img src="images/bridge.jpeg"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Brooklyn Bridge </h3>
+      <ul>
+        <li> it's fun, free, and the perfect way to enjoy breathtaking skyline and river views </li>
+        <li> it is so photogenic </li>
+        <li> walking across this iconic bridge is one of the best things to do in NYC </li>
+        <li> a stroll across the elevated pedestrian walkway provides a true New York City experience </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/brooklyn+bridge/@40.7451655,-73.9935973,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25a2343ce7b2b:0x2526ddba7abd465c!2m2!1d-73.9968643!2d40.7060855?hl=en" target="_blank">Brooklyn Bridge Blvd, New York, NY 10038</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 51 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 13 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 2 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href=""> <img src="images/statue.jpeg"> </a>
+    <!-- <div class="slide_buttons"></div>-->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+   <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+  </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Statue of Liberty </h3>
+      <ul>
+        <li> access to the museum is available to all visitors on Liberty Island </li>
+        <li> can be accessed via a short 10 minute ferry ride </li>
+        <li> the Statue of Liberty is an American icon of democracy and freedom </li>
+        <li> a Historical landmark and staple of New York </li>
+        <li> breathtaking view from the ferry ride </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/statue+of+liberty/@40.7451655,-74.0134566,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25090129c363d:0x40c6a5770d25022b!2m2!1d-74.0445004!2d40.6892494?hl=en" target="_blank">New York, NY 10004</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 57 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 19 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 1 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <!-- The dots/circles -->
+  <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href=""> <img src="images/empire.jpeg"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Empire State Building </h3>
+      <ul>
+        <li> offers several basketball courts </li>
+        <li> from the observation deck, you can see an incredible view of New York – and on a clear day, you can see for miles, including views of up to five states </li>
+        <li> admire from outside or have the best experience from spectacular views from the upper floors </li>
+        <li> 102 floors allowed for tourists to go into and enjoy the views </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/empire+state+building/@40.7081048,-73.9881837,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c259a9b3117469:0xd134e199a405a163!2m2!1d-73.9856644!2d40.7484405?hl=en" target="_blank">20 W 34th St., New York, NY 10001</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 45 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 8 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 3 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  </body>
+</html>

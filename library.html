@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of haniya-designs</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="project/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+.catName {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #007B86;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+}
+
+hr {
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFEB98;
+  height: 3px;
+  margin-top: -9px;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  body {
+	margin: 0;
+	background: ;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+h1 {
+  color: #FFEB98;
+  color: #124C50;
+  color: #FFEB98;
+  color: #124C50;
+
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.title {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  color: white;
+}
+
+header {
+  background: #007B86;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 800;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFEB98;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFEB98;
+
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+nav li:active {
+  color: #FFEB98;
+  cursor: default;
+}
+
+.logo-image img{
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin-right: 55px;
+	margin-left: 55px;
+	margin-bottom: 55px;
+	padding: 10px;
+	background-color: rgb(255, 235, 152, 0.3);
+	background-color: rgb(14, 141, 153, 0.6);
+	background-color: rgb(118, 204, 207, 0.4);
+
+	border-radius: 15px;
+}
+
+.flexed-item {
+  float: left;
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	/*margin:40px 195px;*/
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: ;
+	width:33.33%;
+  justify-content: center;
+  align-items: center;
+	/*justify-content: center; /* center horizontally */
+  /*transition: transform .2s; /* Animation */
+}
+
+.flexed-item img{
+  float: left;
+  width: 100%;
+  height: 350px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.banner {
+	padding: 5px;
+	/*background-color:rgba(154,35,108,0.5);*/
+	color: black;
+	margin:25px 25px;
+	width:96%;
+	justify-content: center; /* center horizontally */
+  transition: transform .2s; /* Animation */
+}
+
+.flexed-item li {
+  margin-left: -20px;
+}
+
+
+.rating {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	/*width: 100%;*/
+	flex-direction:row;
+	flex-wrap:nowrap;
+	/*margin-right: 5px;
+	margin-left: 5px;*/
+	margin-bottom: 5px;
+}
+
+.rating-item {
+  float: left;
+	padding: 5px;
+	color: black;
+	-webkit-justify-content: center;
+	justify-content: center; /* center horizontally */
+	align-items: center;
+	margin-top: -25px;
+	/*margin-right: 1px;
+	margin-left: 1px;*/
+}
+
+.rating-item img{
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #FFEB98;
+  background-color: rgb(14, 141, 153, 1);
+  color: black;
+  border: 2px solid #FFEB98;
+
+  margin-bottom: -2px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(14, 141, 153, 0.5);
+  background-color: #FFEB98;
+  color: black;
+  border-radius: 10px;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 10px;
+  left: -50px;
+  margin: auto;
+  position: absolute;
+  top: 600px;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 120px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+
+* {box-sizing:border-box}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 70px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 920px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+</style>
+</head>
+  <body>
+
+    <header>
+    <div class="container">
+      <img src="images/logo2.png" class="logo">
+      <p class="title" style="float:left">Pick Your Place</p>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br><br> <center> <h2> Libraries </h2> </center> <hr> <br><br>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href=""> <img src="images/grandcentral.jpeg"> </a>
+    <!-- <div class="slide_buttons"></div>-->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+   <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+  </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Grand central library </h3>
+      <ul>
+        <li> conveniently situated for commuters and area workers </li>
+        <li> offers computers, as well as outlets and data ports along bar-height seating looking out on 46th Street </li>
+        <li> popular fiction and nonfiction titles are available for adults, teens, and children </li>
+        <li> the home of Teen Central's collections and programs </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/135+E+46th+St,+New+York,+NY+10017+(Grand+central+library)/@40.7264431,-73.9871185,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c258fd7d36b1b9:0x68c7f0bea83f51c8!2m2!1d-73.9735748!2d40.7539033?hl=en" target="_blank">135 E 46th St, New York, NY 10017</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">    
+        <div class="rating-item" style="width:33%"> <h1> 43 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 11 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 1 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <!-- The dots/circles -->
+  <!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href="musicAlbumCover.html"> <img src="images/east.png"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> East Meadow Public Library </h3>
+      <ul>
+        <li> do research in the databases </li>
+        <li> offers free Wi-Fi </li>
+        <li> providing the services and resources which will enrich and enlighten all segments of the community </li>
+        <li> public computers are available in the Children’s Room if a child requires access to the internet </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/East+Meadow+Public+Library+Central+Library/@40.7014853,-73.7088219,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c27de3b774df67:0x20ace1ccb3dab62b!2m2!1d-73.563342!2d40.719977?hl=en" target="_blank">1886 Front St, East Meadow, NY 11554</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 30 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 16 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 4 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flexed-item" style="width:40%"> <a href="musicAlbumCover.html"> <img src="images/elmont.jpeg"> </a> </div>
+
+    <div class="flexed-item" style="width:30%"> <h3> Elmont Public Library </h3>
+      <ul>
+        <li> various resources to help you and your family learn, grow, and entertain </li>
+        <li> research dadtabases and local history </li>
+        <li> reserve quiet study room or group study rooms for upto 2 hours </li>
+        <li> access to e-books, audiobooks, live tutoring, digital magazines, language courses, streaming video, test prep, and much, much more </li>
+      </ul>
+    </div>
+
+    <div class="flexed-item" style="width:22%">
+      <h4> Address</h4><a href="https://www.google.com/maps/dir/40.6867129,-73.7124787/elmont+public+library/@40.6969958,-73.7279105,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c2630765ff5c1d:0xcf7d2982338827ef!2m2!1d-73.6995956!2d40.7080353" target="_blank">700 Hempstead Turnpike, Elmont, NY 11003</a>
+      <br>
+      <h4> Rating</h4>
+      <center>
+      <div class="rating">
+        <div class="rating-item" style="width:33%"> <h1> 27 </h1> Good </div>
+        <div class="rating-item" style="width:33%"> <h1> 4 </h1> Average </div>
+        <div class="rating-item" style="width:33%"> <h1> 3 </h1> Bad </div>
+      </div>
+      </center>
+      <br> <a href="feedback.html" class="button">Give Your Feedback</a>
+    </div>
+  </div>
+
+  </body>
+</html>
