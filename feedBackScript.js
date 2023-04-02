@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyXoOzykVzLsB7PvsvC30HowzSizN06T85B18Skpx-0iNwgYEGJjaavzOdUQ41-FYyVUQ/exec'
-  const form = document.forms['form-to-sheets']
+i  const form = document.forms['form-to-sheets']
 
   const success = document.getElementById('success');
   form.addEventListener('submit', e => {
