@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyXoOzykVzLsB7PvsvC30HowzSizN06T85B18Skpx-0iNwgYEGJjaavzOdUQ41-FYyVUQ/exec'
-i  const form = document.forms['form-to-sheets']
+  const form = document.forms['form-to-sheets']
 
   const success = document.getElementById('success');
   form.addEventListener('submit', e => {
@@ -31,7 +31,7 @@ range.addEventListener('input', (e) => {
   const max =+e.target.max
   const min =+e.target.min
 
-  // const left = value * (num_width/max) - num_label_width/2
+   const left = value * (num_width/max) - num_label_width/2
   // label.style.left = `${left}px`
 
   console.log()
